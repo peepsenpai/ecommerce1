@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* utilities  */
+.my-button{
+    outline: none;
+    border: none;
+    padding: 4px 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: rgb(182, 207, 240);
+    color: black;
+    border-radius: 13px;
+    letter-spacing: 1px;
+    font-family: 'Staatliches', cursive;
+    /* text-transform: uppercase; */
+}
+.my-button:hover{
+    background: linear-gradient(to left, rgb(156 9 77), rgb(70 108 221));
+    color: rgb(220, 243, 247);
+}
+
+/* navigation  */
+.navbar{
+    box-shadow: 0 0 .3rem black;
+}
+.navbar .logo1-span{
+    color: rgb(24, 116, 28);
+    text-shadow: 0 0 2px rgb(19, 233, 48);
+}
+.navbar .logo2-span{
+    color: black;
+}
+.navbar .navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.7rem;
+}
+.collapse .navbar-nav .nav-item .nav-link{
+    font-weight: 600;
+}
+.collapse .navbar-nav .nav-item .nav-link:hover,
+.collapse .navbar-nav .nav-item .nav-link.active
+{
+    color: rgb(9, 12, 145);
+    border-bottom: 1px solid black ;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* home slider */
+.home .home-banner-1,
+.home .home-banner-2,
+.home .home-banner-3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 520px;
+    /* background-position: center; */
+}
+.home .home-banner-1{
+    background-image: url(img/bgimg5.jpg);
+}
+.home .home-banner-2{
+    background-image: url(img/bgimg8.jpg);
+}
+.home .home-banner-3{
+    background-image: url(img/bgimg7.jpg);
+}
+.home .home-banner-text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-90% , -50%);
+}
+.home .home-banner h1{
+    font-size: 4.5rem;
+    font-family: 'Rampart One', cursive;
+}
+.home .home-banner h3{
+    opacity: .6;
+    color: rgb(96, 41, 199);
+}
+.home .home-banner h1 span{
+    color: rgb(236, 26, 173);
+}
+.home .carousel-indicators [data-bs-target]{
+    background-color: rgb(7, 5, 121);
+    height: .3rem;   
+}
+.home .carousel-control-next-icon,
+.home .carousel-control-prev-icon{
+    background:transparent;
+}
+.home .slider-icon{
+    padding: 3px 8px;
+    background:rgb(7, 5, 121);
+    color: white;
+}
+
+/* counter  */
+.counter-sec{
+   background: linear-gradient(to top, #c32d57, #8b0280);
+}
+.counter-sec p,
+.counter-sec h3{
+    color: white;
+}
+#count1{
+    margin-top: 4px;
+}
+.counter-sec p{
+    font-size: 1.4rem;
+    color: #81cedb;
+}
+
+/* products  */
+.product .container .more-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background: red; */
+    border-top: 2px solid rgb(33, 17, 128) ;
+}
+.product .container .more-products a{
+    font-weight: 500;
+    letter-spacing: 1px;
+    /* box-shadow: 0 0 8px rgb(185, 91, 194); */
+}
+.product .container .more-products a:hover{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to top, #c32d57, #8b0280);
+    border-radius: 10px;
+    padding: 0 6px;
+}
+.product{
+    margin-top: 16px;
+}
+.product a{
+    text-decoration: none;
+    color: rgb(155, 49, 113);
+}
+.product .headline{
+    padding-bottom: 20px;
+}
+.product .container h4{
+ color: rgb(83, 6, 73);
+}
+.product .shop-icon{
+    font-size: 21px;
+    color: #d94bb4;
+}
+.product .product-list del{
+    padding-left: 14px;
+}
+.product .product-list p{
+    font-weight: 500;
+}
+.product .sale{
+    font-size: 20px;
+    color: rgb(247, 17, 113);
+    /* box-shadow: 0 0 4px blue; */
+    font-weight: 700;
+    border-top: 2px solid rgb(37, 8, 202);
+    border-bottom: 2px solid rgb(31, 28, 170);
+    letter-spacing: 2px;
+}
+.product .product-img{
+    margin-top:5px;
+}
+.product .row .product-box{
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+
+/* offers  */
+.offer .c-offer .card1,
+.offer .c-offer .card2,
+.offer .c-offer .card3{
+    position: absolute;
+   top: 30%;
+   left: 20%;
+   color: white;
+
+}
+.offer .c-offer .card1 h3,
+.offer .c-offer .card2 h3,
+.offer .c-offer .card3 h3{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.card::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+/* RESPONSIVE  */
+@media (max-width:1130px){
+    /* home  */
+.home .home-banner-1,
+.home .home-banner-2,
+.home .home-banner-3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 650px;
+    background-position: 70% center;
+}
+.home .home-banner h1{
+    font-size: 3.5rem;
+    font-family: 'Rampart One', cursive;
+}
+.home .home-banner-text{
+    transform: translate(-75% , -50%);
+}
+
+.offer .c-offer .card1 h3,
+.offer .c-offer .card2 h3,
+.offer .c-offer .card3 h3{
+    font-size: 1.6rem;
+}
+}
+
+@media (max-width:700px){
+    /* home  */
+.home .home-banner-1,
+.home .home-banner-2,
+.home .home-banner-3{
+    min-height: 500px;
+    background-position: 50% center;
+}
+.home .home-banner-text{
+    transform: translate(-70% , -40%);
+}
+.home .home-banner h1{
+    font-size: 2.5rem;
+}
+.offer .card{
+    margin: 0 20px;
+}
+}
+
+@media (max-width:500px){
+    /* home  */
+    .home .home-banner-1,
+    .home .home-banner-2,
+    .home .home-banner-3{
+        min-height: 300px;
+        background-position: 40% center;
+    }
+    .home .home-banner-text{
+        transform: translate(-60% , -50%);
+    }
+    .home .home-banner h1{
+        font-size: 1.5rem;
+    }
+    .home .home-banner h3{
+        font-size: 1rem;
+    }
+    .my-button{
+        padding: 4px 6px;
+    font-size: 12px;
+    }
+}
+@media (max-width:320px){
+    .home .home-banner-1,
+    .home .home-banner-2,
+    .home .home-banner-3{
+        min-height: 250px;
+        background-position: 30% center;
+    }
+}
