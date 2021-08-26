@@ -8,6 +8,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    width: auto;
+}
 
 /* utilities  */
 .my-button{
@@ -21,11 +24,32 @@ html{
     border-radius: 13px;
     letter-spacing: 1px;
     font-family: 'Staatliches', cursive;
-    /* text-transform: uppercase; */
 }
 .my-button:hover{
     background: linear-gradient(to left, rgb(156 9 77), rgb(70 108 221));
     color: rgb(220, 243, 247);
+}
+h2{
+    padding: 0 9px;
+    border-left: 2px solid rgb(64, 34, 197);
+    border-right: 2px solid rgb(64, 32, 197);
+}
+.sale{
+    font-size: 20px;
+    color: rgb(247, 17, 113);
+    /* box-shadow: 0 0 4px blue; */
+    font-weight: 700;
+    border-top: 2px solid rgb(37, 8, 202);
+    border-bottom: 2px solid rgb(31, 28, 170);
+    letter-spacing: 2px;
+}
+.blur-text{
+    opacity: .6;
+    color: rgb(96, 41, 199);
+}
+del{
+    opacity: .6;
+    font-size: 13px;
 }
 
 /* navigation  */
@@ -85,10 +109,6 @@ html{
     font-size: 4.5rem;
     font-family: 'Rampart One', cursive;
 }
-.home .home-banner h3{
-    opacity: .6;
-    color: rgb(96, 41, 199);
-}
 .home .home-banner h1 span{
     color: rgb(236, 26, 173);
 }
@@ -128,7 +148,6 @@ html{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background: red; */
     border-top: 2px solid rgb(33, 17, 128) ;
 }
 .product .container .more-products a{
@@ -165,15 +184,6 @@ html{
 .product .product-list p{
     font-weight: 500;
 }
-.product .sale{
-    font-size: 20px;
-    color: rgb(247, 17, 113);
-    /* box-shadow: 0 0 4px blue; */
-    font-weight: 700;
-    border-top: 2px solid rgb(37, 8, 202);
-    border-bottom: 2px solid rgb(31, 28, 170);
-    letter-spacing: 2px;
-}
 .product .product-img{
     margin-top:5px;
 }
@@ -182,7 +192,19 @@ html{
     margin-bottom: 23px;
 }
 
+.wishlist{
+    position: absolute;
+    right: 20%;
+}
+.wishlist i:hover{
+    color: rgb(236, 163, 234);
+}
+.wishlist i{
+    letter-spacing: 2px;
+}
+
 /* offers  */
+/* current  */
 .offer .c-offer .card1,
 .offer .c-offer .card2,
 .offer .c-offer .card3{
@@ -210,6 +232,153 @@ html{
     bottom: 0;
     background: rgba(0,0,0,0.5);
 }
+/* upcoming  */
+.upcoming{
+    padding: 2rem 2rem ;
+}
+.upcoming .countdown{
+   padding: 43px 23px;
+}
+.upcoming .countdown p{
+    color: rgb(219, 24, 131);
+}
+.upcoming .countdown h4{
+    margin: 23px 0;
+    letter-spacing: 2px;
+    color: rgb(243, 1, 170);
+    font-weight: 600;
+}
+.upcoming .countdown li{
+    display: inline-block;
+    padding: 0px 8px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.upcoming .box-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upcoming .price{
+    font-weight: 600;
+}
+.upcoming .upcoming-img{
+    box-shadow: 0 0 2px rgb(228, 14, 156);
+}
+.upcoming .countdown span{
+    color: rgb(177, 7, 100);
+}
+
+/* review  */
+.review .carousel-control-prev-icon,
+.review .carousel-control-next-icon{
+    background: transparent;
+}
+.review .slider-icon{
+    padding: 3px 6px;
+    background:rgb(121, 5, 82);
+    color: white;
+}
+.review .box{
+    padding: 9px 39px;
+    margin: 2px 63px;
+}
+.review .box p{
+    opacity: .8;
+}
+.review .box h4{
+    font-size: 1.68em;
+}
+
+/* address  */
+.address .more-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+form{
+    padding: 0 56px;
+    margin: 0 56px;
+}
+form label{
+    color: rgb(243, 1, 170);
+    font-size: 1.1rem;
+}
+
+/* contact  */
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+}
+.contact-box input{
+    letter-spacing:1px ;
+}
+.form-group{
+    padding-bottom: 12px;
+}
+
+/* footer item  */
+.footer .footer-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem,1fr));
+    gap: 2rem;
+    background: linear-gradient(to left, rgb(224, 17, 155), rgb(180, 5, 136));
+}
+.footer .footer-item{
+    padding: 23px 20px;
+    margin: 0 23px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer-item a{
+    color: rgb(255, 218, 243);
+    text-decoration: none;
+}
+.footer .footer-item a:hover{
+    color: #81cedb;
+}
+.footer .footer-item .footer-icons a{
+    padding: 0 4px;
+}
+
+/* credit  */
+.copyright{
+    text-align: center;
+    background: rgb(218, 39, 113);
+    color: white;
+}
+
+/* scroll  */
+#scrollBtn{
+    position: fixed;
+    right: 5%;
+    bottom: 3%;
+    height: 2rem;
+    border-radius: .34rem;
+    cursor: ponter;
+    z-index: 1000;
+    text-align: center;
+    background: rgb(133, 0, 173);
+    display: none;
+
+}
+#scrollBtn span{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 8px; 
+    line-height: 2rem;
+}
+#scrollBtn.active{
+    display: block;
+}
+
 /* RESPONSIVE  */
 @media (max-width:1130px){
     /* home  */
@@ -254,6 +423,12 @@ html{
 .offer .card{
     margin: 0 20px;
 }
+.upcoming .box-cont{
+    flex-direction: column;
+}
+.wishlist{
+    right: 10%;
+}
 }
 
 @media (max-width:500px){
@@ -277,6 +452,33 @@ html{
         padding: 4px 6px;
     font-size: 12px;
     }
+    .wishlist{
+        right: 5%;
+    }
+    .review .box{
+        padding: 0;
+        margin-left: 37px;
+    margin-right: 9px;
+    }
+    .upcoming-img img{
+        width: 290px;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    .headline{
+        margin: 30px 0;
+    }
+    .my-button{
+        font-size: 13px;
+    }
+    .contact-box input,
+.contact-box textarea{
+    width: auto;
+}
+.copyright{
+    font-size: 12px;
+}
 }
 @media (max-width:320px){
     .home .home-banner-1,

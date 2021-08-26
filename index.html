@@ -44,21 +44,22 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#currentOffer">Current Offer</a></li>
-                <li><a class="dropdown-item" href="#">Upcoming Offer</a></li>
-                <!-- <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                <li><a class="dropdown-item" href="#upcoming">Upcoming Offer</a></li>
               </ul>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#review">Reviews</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#address" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+               More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#address">Address</a></li>
+                <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
+              </ul>
             </li>
-            <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li> -->
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -81,60 +82,35 @@
           aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-
         <div class="carousel-item active">
-
           <div class="home-banner home-banner-1">
             <div class="home-banner-text">
               <h1>Women <span>Fashion</span></h1>
-              <h3>50% Discount Only for Today</h3>
+              <h3 class="blur-text">50% Discount Only for Today</h3>
               <a href="#" class="btn text-uppercase mt-2"><button class="my-button"><i class="fas fa-cart-plus"></i>
                   Order Now</button></a>
             </div>
           </div>
-
-          <!-- <img src="..." class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div> -->
-
         </div>
-
         <div class="carousel-item">
-
           <div class="home-banner home-banner-2">
             <div class="home-banner-text">
               <h1>Shop With <span>Card</span></h1>
-              <h3>Debit/Credit or Paypal Accepted</h3>
+              <h3 class="blur-text">Debit/Credit or Paypal Accepted</h3>
               <a href="#" class="btn text-uppercase mt-2"><button class="my-button"><i class="fas fa-shopping-bag"></i>
                   Shop Now</button></a>
             </div>
           </div>
-
-          <!-- <img src="..." class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div> -->
-
         </div>
-
         <div class="carousel-item">
-
           <div class="home-banner home-banner-3">
             <div class="home-banner-text">
               <h1>Upcoming <span>Sale</span></h1>
-              <h3>Book your slot now ; to get extra 5% discount</h3>
+              <h3 class="blur-text">Book your slot now ; to get extra 5% discount</h3>
               <a href="#" class="btn text-uppercase mt-2"><button class="my-button"> <i
                     class="fas fa-shopping-basket"></i> Book now</button></a>
             </div>
           </div>
-          <!-- <img src="..." class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div> -->
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -162,7 +138,7 @@
             <h3>
               <span id="count1"></span>+
             </h3>
-            <p>Sallable Items</p>
+            <p>Sellable Items</p>
           </div>
           <div class="col-md-3 mb-lg-0 mb-md-0 mb-4">
             <h3>
@@ -172,7 +148,7 @@
           </div>
           <div class="col-md-3 mb-lg-0 mb-md-0 mb-4">
             <h3>
-              <span id="count3"></span>+
+              <span id="count3"></span>K+
             </h3>
             <p>Customers</p>
           </div>
@@ -203,6 +179,7 @@
             <div class="product-list">
               <span class="sale">Sale</span>
               <div class="product-img position-relative">
+                <div class="wishlist"><i class="fas fa-cart-arrow-down"></i> <i class="fas fa-heart"></i></div>
                 <img src="img/clothe2.png" class="img-fluid product-img-first" alt="product">
               </div>
               <div class="product-name pt-3">
@@ -225,7 +202,7 @@
           <a href="#" class="d-block text-center mb-3">
             <div class="product-list">
               <div class="product-img position-relative">
-                <!-- <span class="sale">Sale</span> -->
+                <div class="wishlist"><i class="fas fa-cart-arrow-down"></i> <i class="fas fa-heart"></i></div>
                 <img src="img/cloth9.png" class="img-fluid product-img-first" alt="product">
               </div>
               <div class="product-name pt-3">
@@ -249,6 +226,7 @@
             <div class="product-list">
               <span class="sale">Sale</span>
               <div class="product-img position-relative">
+                <div class="wishlist"><i class="fas fa-cart-arrow-down"></i> <i class="fas fa-heart"></i></div>
                 <img src="img/clothe3.png" class="img-fluid product-img-first" alt="product">
               </div>
               <div class="product-name pt-3">
@@ -271,7 +249,7 @@
           <a href="#" class="d-block text-center mb-3">
             <div class="product-list">
               <div class="product-img position-relative">
-                <!-- <span class="sale">Sale</span> -->
+                <div class="wishlist"><i class="fas fa-cart-arrow-down"></i> <i class="fas fa-heart"></i></div>
                 <img src="img/clothe5.jfif" class="img-fluid product-img-first" alt="product">
               </div>
               <div class="product-name pt-3">
@@ -295,6 +273,7 @@
             <div class="product-list">
               <span class="sale">Sale</span>
               <div class="product-img position-relative">
+                <div class="wishlist"><i class="fas fa-cart-arrow-down"></i> <i class="fas fa-heart"></i></div>
                 <img src="img/cloth14.png" class="img-fluid product-img-first" alt="product">
               </div>
               <div class="product-name pt-3">
@@ -317,7 +296,7 @@
           <a href="#" class="d-block text-center mb-3">
             <div class="product-list">
               <div class="product-img position-relative">
-                <!-- <span class="sale">Sale</span> -->
+                <div class="wishlist"><i class="fas fa-cart-arrow-down"></i> <i class="fas fa-heart"></i></div>
                 <img src="img/clothe7.png" class="img-fluid product-img-first" alt="product">
               </div>
               <div class="product-name pt-3">
@@ -341,6 +320,7 @@
             <div class="product-list">
               <span class="sale">Sale</span>
               <div class="product-img position-relative">
+                <div class="wishlist"><i class="fas fa-cart-arrow-down"></i> <i class="fas fa-heart"></i></div>
                 <img src="img/clothe12.jfif" class="img-fluid product-img-first" alt="product">
               </div>
               <div class="product-name pt-3">
@@ -364,6 +344,7 @@
             <div class="product-list">
               <span class="sale">Sale</span>
               <div class="product-img position-relative">
+                <div class="wishlist"><i class="fas fa-cart-arrow-down"></i> <i class="fas fa-heart"></i></div>
                 <img src="img/cloth13.jfif" class="img-fluid product-img-first" alt="product">
               </div>
               <div class="product-name pt-3">
@@ -386,7 +367,7 @@
           <a href="#" class="d-block text-center mb-3">
             <div class="product-list">
               <div class="product-img position-relative">
-                <!-- <span class="sale">Sale</span> -->
+                <div class="wishlist"><i class="fas fa-cart-arrow-down"></i> <i class="fas fa-heart"></i></div>
                 <img src="img/clothe11.jpg" class="img-fluid product-img-first" alt="product">
               </div>
               <div class="product-name pt-3">
@@ -415,8 +396,9 @@
     </div>
   </section>
 
-  <!-- offers  -->
-  <section class="offer" id="offer">
+  <!-- offers section -->
+  <!-- current  -->
+  <section class="offer" id="currentOffer">
     <div class="row">
       <div class="col-sm-12">
         <div class="headline text-center mb-3">
@@ -424,7 +406,7 @@
         </div>
       </div>
     </div>
-    <div id="currentOffer" class="c-offer">
+    <div class="c-offer">
       <div class="container">
         <div class="card-group position-relative">
           <div class="card">
@@ -456,6 +438,251 @@
     </div>
 
   </section>
+
+  <!-- upcoming  -->
+  <section class="upcoming" id="upcoming">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="headline text-center mb-3">
+            <h2 class="mt-3 pb-2 position-relative d-inline-block">Upcoming Offer</h2>
+          </div>
+        </div>
+
+        <div class="box-cont">
+          <div class="countdown">
+            <h5 class="blur-text">Book Your slot today to get extra discount</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sit maxime, voluptatibus facere id
+              quasi in unde recusandae quas sapiente illum eius molestias, eum labore mollitia tempora quos sed omnis
+              nostrum magni minus. Vel.</p>
+            <h4 class="text-uppercase">sale starts in</h4>
+            <ul class="list-unstyled backcount">
+              <li><span id="day"></span> Days</li>
+              <li><span id="hr"></span> Hours</li>
+              <li><span id="mint"></span> Minutes</li>
+              <li><span id="sec"></span> Seconds</li>
+            </ul>
+            <span class="price d-block mb-3">$987.09 <del> $1387.98</del></span>
+            <button class="my-button">Book Slot</button>
+          </div>
+          <div class="upcoming-img position-relative">
+            <img src="img/special2.jpg" alt="upcoming" class="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- reviews  -->
+  <section class="review" id="review">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="headline text-center mb-3">
+            <h2 class="mt-3 pb-2 position-relative d-inline-block">Feedback Form Customers</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="box">
+                <i class="fas fa-user-tie"></i>
+                <h4>Ritesh Das</h4>
+                <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, provident? Lorem ipsum dolor sit,
+                  amet consectetur adipisicing elit. Voluptatibu "</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="box">
+                <i class="fas fa-user-tie"></i>
+                <h4>Aritra Samanta</h4>
+                <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, provident? Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Voluptati "</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div class="box">
+                <i class="fas fa-user-tie"></i>
+                <h4>Sanjiv Patel</h4>
+                <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, provident? Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Voluptatibus "</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="slider-icon"><i class="fas fa-angle-left"></i></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="slider-icon"><i class="fas fa-angle-right"></i></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+  </section>
+
+  <!-- order details -->
+
+  <section class="address" id="address">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="headline text-center mb-3">
+          <h2 class="mt-3 pb-2 position-relative d-inline-block">Get product on your door step</h2>
+        </div>
+      </div>
+      <div class="more-products">
+        <h5>Veirfy your home address</h5>
+      </div>
+      <div class="address-form">
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Your Email">
+          </div>
+          <div class="col-md-4">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Enter Your Password">
+          </div>
+          <div class="col-4">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="col-4">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="col-md-4">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Your current city?">
+          </div>
+          <div class="col-md-2">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" placeholder="Your pincode?">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Agreed to our policies
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary my-button">SUBMIT-></button>
+          </div>
+        </form>
+      </div>
+  </section>
+
+  <!-- contact  -->
+  <section id="contact">
+    <div class="col-sm-12">
+      <div class="headline text-center mb-3">
+        <h2 class="mt-3 pb-2 position-relative d-inline-block">Send Your Message</h2>
+      </div>
+    </div>
+    <div class="contact-box">
+        <form action="">
+            <div class="form-group">
+                <label for="name">name: </label>
+                <input type="text" name="name" id="name1" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="name">Email: </label>
+                <input type="email" name="name" id="name2" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <label for="name">Massage Us: </label>
+                <textarea name="message" id="msg" cols="30" rows="10" placeholder="Write Your Quaries"></textarea>
+            </div>
+            <div class="form-group submit-btn">
+                <button class="my-button">Send-></button>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<section class="footer">
+  <div class="footer-box">
+
+    <div class="footer-item">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Offers</a>
+      <a href="#">Sign-up</a>
+    </div>
+    <div class="footer-item">
+      <h4>Community</h4>
+      <a href="#">Carrier</a>
+      <a href="#">Discussions</a>
+      <a href="#">Corporate Sponsors</a>
+      <a href="#">About Us</a>
+    </div>
+    <div class="footer-item">
+      <h4>Get in Touch</h4>
+      <a href="#">+91-789456123</a>
+      <a href="#">estore@gmail.com</a>
+      <a href="#">kolkata,789456</a>
+    </div>
+    <div class="footer-item">
+      <div class="footer-icons">
+      <h4>Follow us</h4>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram-square"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-google-plus"></i></a>
+    </div>
+    </div>
+  </div>
+</section>
+
+<footer class="credit">
+  <div class="copyright">
+    Copyright &copy; CREATED BY ARIJIT !All rights reserved
+  </div>
+</footer>
+
+<!-- scroll top  -->
+<div id="scrollBtn">
+  <a href="#home"><span class="fs-4 text-white"><i class="fas fa-arrow-circle-up"></i></span></a>
+</div>
+
 
   <!-- js bootstrap  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
