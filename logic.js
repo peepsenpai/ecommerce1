@@ -28,7 +28,7 @@ let mintItem = document.querySelector('#mint');
 let secItem = document.querySelector('#sec');
 
 let backCount = () =>{
-    let futureDate = new Date("30 sept 2021");
+    let futureDate = new Date("30 dec 2021");
     let currentDate = new Date();
     let useDate = futureDate - currentDate;
 
